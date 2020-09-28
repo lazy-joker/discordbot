@@ -12,7 +12,7 @@ Discordにて定期的に室温をつぶやくボットです。
 Discordチャンネルに投稿します。
 
 ボット起動後、Discordで以下のコマンドを投稿すると
-コマンドを投稿したチャネルにボットが投稿します。
+コマンドを投稿したチャンネルにボットが投稿します。
 
 * $hello : 「よぅ!」と投稿します。
 * $ojichat : ojichat コマンドの出力内容を投稿します。
@@ -38,6 +38,7 @@ nohup python3
 を実行し、「.env」ファイル内に以下を記載します。
 
 > SANDBOX_CHANNEL_ID= <1時間ごとに室温を投稿するチャンネルのID>
+
 > BOT_TOKEN= <ボットのトークン>
 
 ボットの登録方法、トークンの取得方法は[Discord Developer Portal](https://discord.com/developers/applications)を
