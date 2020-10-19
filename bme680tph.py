@@ -19,11 +19,9 @@ sensor.set_filter(bme680.FILTER_SIZE_3)
 
 def get_sensor():
     if sensor.get_sensor_data():
-        output = """温度 : {0:.2f} [°C],
-気圧 : {1:.2f} [hPa],
-湿度 : {2:.3f} [%RH]""".format(
+        output= [
             sensor.data.temperature,
             sensor.data.pressure,
-            sensor.data.humidity)
+            sensor.data.humidity]
         return(output)
 
